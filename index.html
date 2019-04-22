@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Calculations</title>
+</head>
+<body>
+    <script>
+        const RANGE_LIMIT = 20;
+        var sumEven = 0, sumOdd = 0, sumAll = 0, results = [];
+        for (var i = 0; i <= RANGE_LIMIT; i++) {
+            if (i % 2 == 0) {
+                sumEven = sumEven + i;
+            } else {
+                sumOdd = sumOdd + i;
+            }
+            sumAll = sumAll + i;
+        }
+        results.push(sumEven); results.push(sumOdd); results.push(sumAll);
+        console.log("For are the results of numbers 0 - " + RANGE_LIMIT + ", sumOdd: " + results[0] + "; sumEven: " + results[1] + "; sumAll: " + results[2]);
+    </script>
+</body>
+</html>
